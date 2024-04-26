@@ -57,6 +57,8 @@
   </Style>
 </head>
   <body>
+
+    {% include 'nav.html'%}
     <div id="container">
     <h1>Food Guardian<h1>
       <img id="banner" class="img-fluid" src="https://a9305a7d-3d99-4a55-8e55-e51905d90a41-00-9ty9q6p8de28.spock.replit.dev/static/food%20.jpg">
@@ -91,9 +93,10 @@
 
     <div style="text-align:center;">
 
-      <button class="btn btn-primary btn-lg">Contract Us</button>
-    <p CLASS="mt-4 mb-4">copyright 2023,Food_Guardian</p>
+      <a class="btn btn-primary btn-lg" href="mailto:mahadi@mahadi.com?subject=Question%20about%20Food%20Guardian&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0AQuestion%3A%3Center%20question%20here%3E">Contract Us</a>
+   
     </div>
     </div>
+     {% include 'footer.html'%}
   </body>
 </html>
