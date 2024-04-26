@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template,jsonify
 app =Flask(__name__)
 
 FOODS = [
@@ -57,6 +57,9 @@ FOODS = [
     'quntity':'9'
   }
 ]
+@app.route("/api/foods")
+def list_foods():
+  return jsonify(FOODS)
 
 @app.route('/')
 def hello_world():
